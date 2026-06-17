@@ -125,6 +125,30 @@
   });
 
   /*------------------
+        Pricing Slider
+    --------------------*/
+  $(".pricing__slider").owlCarousel({
+    loop: true,
+    margin: 30,
+    items: 3,
+    nav: false,
+    dots: true,
+    smartSpeed: 1200,
+    autoplay: false,
+    responsive: {
+      992: {
+        items: 3,
+      },
+      768: {
+        items: 2,
+      },
+      320: {
+        items: 1,
+      },
+    },
+  });
+
+  /*------------------
         Logo Slider
     --------------------*/
   $(".logo__carousel").owlCarousel({
