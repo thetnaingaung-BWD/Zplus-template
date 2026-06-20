@@ -153,15 +153,15 @@ ol {
   letter-spacing: 2px;
   position: relative;
   z-index: 1;
-  background: linear-gradient(135deg, #ff4444 0%, #cc0000 100%);
+  background: linear-gradient(135deg, #1E293B 0%, #E11D48 100%);
   border: none;
   border-radius: 50px;
-  box-shadow: 0 10px 30px rgba(255, 68, 68, 0.4);
+  box-shadow: 0 4px 6px 1px rgb(79 70 229 / 0.3);
   transition: all 0.3s ease;
 }
 .primary-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 15px 40px rgba(255, 68, 68, 0.6);
+  box-shadow: 0 6px 12px 2px rgb(79 70 229 / 0.4);
 }
 .primary-btn:active {
   transform: translateY(-1px);
@@ -173,7 +173,7 @@ ol {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, #cc0000 0%, #ff4444 100%);
+  background: linear-gradient(135deg, #E11D48 0%, #1E293B 100%);
   border-radius: 50px;
   opacity: 0;
   z-index: -1;
@@ -272,12 +272,16 @@ ol {
   
 }
 .navbar-transparent{
-  background: rgba(225, 20, 20, 0.21);
+  /* background: rgba(225, 20, 20, 0.21); */
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(3.6px);
-  -webkit-backdrop-filter: blur(3.6px);
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+  /* backdrop-filter: blur(3.6px); */
+  /* -webkit-backdrop-filter: blur(3.6px); */
   border: 1px solid rgba(225, 20, 20, 0.3);
+  background: linear-gradient(135deg, #1E293B 0%, #0F172A 100%);
+  color: #F8FAFC;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 20px rgb(0 0 0 / 0.25);
 }
 .header__logo {
   padding: 10px 0;
@@ -603,8 +607,10 @@ ol {
 }
 
 .counter__item {
-  background: linear-gradient(135deg, #008080 0%, #00b3b3 100%);
-  box-shadow: 0 10px 40px rgba(0, 128, 128, 0.4);
+  background: linear-gradient(135deg, #1E293B 0%, #E11D48 100%);
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px 1px rgb(79 70 229 / 0.3);
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
       transform: rotate(45deg);
@@ -626,7 +632,7 @@ ol {
 }
 .counter__item:hover {
   transform: rotate(45deg) scale(1.05);
-  box-shadow: 0 15px 50px rgba(0, 128, 128, 0.6);
+  box-shadow: 0 6px 12px 2px rgb(79 70 229 / 0.4);
 }
 .counter__item::before {
   position: absolute;
@@ -1735,7 +1741,12 @@ ol {
     position: absolute;
     right: 10px;
     top: 26px;
-    background-color: red;
+    outline: none;
+    background: linear-gradient(135deg, #1E293B 0%, #E11D48 100%);
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px 1px rgb(79 70 229 / 0.3);
   }
 
   .header .container {
@@ -1861,7 +1872,12 @@ ol {
     position: absolute;
     right: 10px;
     top: 12px;
-    background: red;
+    outline: none;
+    background: linear-gradient(135deg, #1E293B 0%, #E11D48 100%);
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px 1px rgb(79 70 229 / 0.3);
   }
 
   .header .container {
@@ -1979,12 +1995,24 @@ ol {
   background-color: rgba(0,0,0,0.85);
 }
 .modal-content {
+  background: linear-gradient(135deg, #1E293B 0%, #E11D48 100%);
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px 1px rgb(79 70 229 / 0.3);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
 }
 .modal-open {
   overflow: hidden !important;
   padding-right: 0px !important;
+}
+
+/* Hide "Plus" text on screens below 1080px */
+@media only screen and (max-width: 1080px) {
+  .brand-plus {
+    display: none !important;
+  }
 }
 
 /*------------------
@@ -2098,7 +2126,7 @@ ol {
   display: inline-block;
   width: 100%;
   text-decoration: none;
-  background: linear-gradient(135deg, #00bfe7 0%, #008fb3 100%);
+  background: linear-gradient(135deg, #1E293B 0%, #E11D48 100%);
   color: #ffffff;
   font-family: "Play", sans-serif;
   font-weight: 700;
@@ -2108,13 +2136,15 @@ ol {
   transition: all 0.3s ease;
   border: none;
   cursor: pointer;
+  box-shadow: 0 4px 6px 1px rgb(79 70 229 / 0.3);
 }
 
 .pricing__item__btn:hover {
-  background: linear-gradient(135deg, #00d4ff 0%, #00a8cc 100%);
+  background: linear-gradient(135deg, #E11D48 0%, #1E293B 100%);
   transform: scale(1.05);
   color: #ffffff;
   text-decoration: none;
+  box-shadow: 0 6px 12px 2px rgb(79 70 229 / 0.4);
 }
 
 /* Pricing Dots Styling */
